@@ -1,0 +1,5 @@
+build:
+  docker:
+    worker: Dockerfile
+run:
+  worker: youtube-dl -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' https://youtube.com/playlist?list=plad9k3cmpk18r-r428cqv0m84wkpjbubt 
